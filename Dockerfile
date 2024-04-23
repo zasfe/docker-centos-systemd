@@ -15,6 +15,18 @@ RUN cd /lib/systemd/system/sysinit.target.wants/ ; \
     rm -f /lib/systemd/system/basic.target.wants/* ; \
     rm -f /lib/systemd/system/anaconda.target.wants/*
 
+RUN yum install -y iproute net-tools openssh-server sudo ; \ 
+    ssh-keygen -A ; \
+    sed -i "s/#UseDNS yes/UseDNS no/g" /etc/ssh/sshd_config ; \
+    sed -i "s/#UseDNS no/UseDNS no/g" /etc/ssh/sshd_config ; \
+    systemctl enable sshd ; \
+    systemctl restart sshd ; \
+    useradd vagrant ; \
+    echo "vagrant" | passwd --stdin vagrant ; \
+    chmod u+w /etc/sudoers.d ; \
+    echo "vagrant        ALL=NOPASSWD:       ALL" >> /etc/sudoers.d/vagrant ; \
+    chmod u-w /etc/sudoers.d
+
 VOLUME ["/sys/fs/cgroup"]
 
 CMD ["/sbin/init"]
