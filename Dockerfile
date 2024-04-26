@@ -15,7 +15,7 @@ RUN cd /lib/systemd/system/sysinit.target.wants/ ; \
     rm -f /lib/systemd/system/basic.target.wants/* ; \
     rm -f /lib/systemd/system/anaconda.target.wants/*
 
-RUN yum install -y iproute net-tools openssh-server sudo ; \ 
+RUN yum install -y iproute net-tools openssh-server sudo firwalld python-firewal; \ 
     ssh-keygen -A ; \
     sed -i "s/#UseDNS yes/UseDNS no/g" /etc/ssh/sshd_config ; \
     sed -i "s/#UseDNS no/UseDNS no/g" /etc/ssh/sshd_config ; \
