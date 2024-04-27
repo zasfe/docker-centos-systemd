@@ -25,7 +25,8 @@ RUN yum install -y iproute net-tools openssh-server sudo firwalld python-firewal
     echo "vagrant" | passwd --stdin vagrant ; \
     chmod u+w /etc/sudoers.d ; \
     echo "vagrant        ALL=NOPASSWD:       ALL" >> /etc/sudoers.d/vagrant ; \
-    chmod u-w /etc/sudoers.d
+    chmod u-w /etc/sudoers.d ; \
+    rm -f /run/nologin ;
 
 VOLUME ["/sys/fs/cgroup"]
 
