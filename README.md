@@ -3,7 +3,8 @@ Docker CentOS Systemd
 
 This Dockerfile can build containers capable to use systemd.
 
-[![centos build status](https://img.shields.io/docker/cloud/build/robertdebock/centos.svg)](https://hub.docker.com/repository/docker/robertdebock/centos)
+[![build status badge](https://img.shields.io/github/actions/workflow/status/zasfe/docker-centos-systemd/build-push-action.yml?branch=7-systemd-vagrant&label=GitHub%20CI)](https://github.com/zasfe/docker-centos-systemd/actions?query=workflow%3A%22GitHub+CI%22+branch%3A7-systemd-vagrant)
+
 
 * original repogitory: https://github.com/robertdebock/docker-centos-systemd/
 
@@ -15,6 +16,7 @@ This repository has multiple branches that relate to CentOS versions.
 |Branch |CentOS Version|Docker image tag|
 |-------|--------------|----------------|
 |master |latest (8)    |8               |
+|7-systemd-vagrant      |7             |7-systemd-vagrant               |
 |7      |7             |7               |
 
 Pull strategy
