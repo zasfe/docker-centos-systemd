@@ -3,8 +3,15 @@ Docker CentOS Systemd
 
 This Dockerfile can build containers capable to use systemd.
 
-[![build status badge](https://img.shields.io/github/actions/workflow/status/zasfe/docker-centos-systemd/build-push-action.yml?branch=7&label=GitHub%20CI)](https://github.com/zasfe/docker-centos-systemd/actions?query=workflow%3A%22GitHub+CI%22+branch%3A7)
+[![build status badge](https://img.shields.io/github/actions/workflow/status/zasfe/docker-centos-systemd/build-push-action.yml?branch=7&label=GitHub%20CI)](https://github.com/zasfe/docker-centos-systemd/actions?query=workflow%3A%22GitHub+CI%22+branch%3A7) 
+![Docker Automated build](https://img.shields.io/docker/automated/zasfe/centos?label=Docker%20Automated%20build)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/zasfe/centos?label=Docker%20Cloud%20Automated%20build)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/zasfe/centos?label=Docker%20Cloud%20Build%20Status)
 
+![Docker Image Version (tag)](https://img.shields.io/docker/v/zasfe/centos/7)
+![Docker Stars](https://img.shields.io/docker/stars/zasfe/centos.svg) 
+![Docker Pulls](https://img.shields.io/docker/pulls/zasfe/centos.svg) 
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/zasfe/centos/7?label=Docker%20Image%20Size)
 
 * original repogitory: https://github.com/robertdebock/docker-centos-systemd/
 
